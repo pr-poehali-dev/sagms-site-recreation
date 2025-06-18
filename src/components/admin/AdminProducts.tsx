@@ -23,6 +23,16 @@ const AdminProducts = () => {
         "https://cdn.poehali.dev/files/63b611e4-34d9-4c3a-bfd7-61bc8f7cc4e1.png",
       buyLink: "https://t.me/arznice",
     },
+    {
+      id: 3,
+      title: "Лаунчер Arizona PC",
+      price: "50₽",
+      type: "launcher",
+      status: "active",
+      image:
+        "https://cdn.poehali.dev/files/84ece5f2-1cff-4ce1-bbf7-f97b2f5f378d.png",
+      buyLink: "https://t.me/arznice",
+    },
   ]);
 
   const [showAddForm, setShowAddForm] = useState(false);

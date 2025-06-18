@@ -34,6 +34,22 @@ const Products = () => {
       ],
       buyLink: "https://t.me/arznice",
     },
+    {
+      id: 3,
+      title: "Лаунчер Arizona PC",
+      description:
+        "Профессиональный лаунчер для ПК с расширенным функционалом и стабильной работой на Arizona RP",
+      price: "50₽",
+      image:
+        "https://cdn.poehali.dev/files/84ece5f2-1cff-4ce1-bbf7-f97b2f5f378d.png",
+      type: "launcher",
+      features: [
+        "Полная версия для ПК",
+        "Максимальная производительность",
+        "Профессиональный интерфейс",
+      ],
+      buyLink: "https://t.me/arznice",
+    },
   ];
 
   return (
