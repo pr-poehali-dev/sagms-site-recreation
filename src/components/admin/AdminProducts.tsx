@@ -2,22 +2,7 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const AdminProducts = () => {
-  const [products, setProducts] = useState([
-    {
-      id: 1,
-      title: "SAMP Launcher Pro",
-      price: "299₽",
-      type: "launcher",
-      status: "active",
-    },
-    {
-      id: 2,
-      title: "GTA SAMP Graphics Mod",
-      price: "199₽",
-      type: "mod",
-      status: "active",
-    },
-  ]);
+  const [products, setProducts] = useState([]);
 
   const [showAddForm, setShowAddForm] = useState(false);
   const [editingProduct, setEditingProduct] = useState(null);

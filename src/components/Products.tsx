@@ -1,72 +1,7 @@
 import Icon from "@/components/ui/icon";
 
 const Products = () => {
-  const products = [
-    {
-      id: 1,
-      type: "launcher",
-      title: "SAMP Launcher Pro",
-      description: "Продвинутый лаунчер с автообновлением модов и серверов",
-      price: "299₽",
-      image:
-        "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=250&fit=crop",
-      features: ["Автообновление", "Менеджер модов", "Список серверов"],
-    },
-    {
-      id: 2,
-      type: "mod",
-      title: "GTA SAMP Graphics Mod",
-      description: "Улучшенная графика и визуальные эффекты для SAMP",
-      price: "199₽",
-      image:
-        "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=250&fit=crop",
-      features: ["HD текстуры", "Улучшенное освещение", "Оптимизация FPS"],
-    },
-    {
-      id: 3,
-      type: "launcher",
-      title: "Ultimate SAMP Client",
-      description: "Полнофункциональный клиент с интегрированными модами",
-      price: "499₽",
-      image:
-        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=250&fit=crop",
-      features: ["Встроенные моды", "Защита от читов", "Статистика игры"],
-    },
-    {
-      id: 4,
-      type: "mod",
-      title: "SAMP Audio Pack",
-      description: "Расширенный пакет звуков и музыки для SAMP",
-      price: "149₽",
-      image:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=250&fit=crop",
-      features: ["HD звуки", "Новая музыка", "Звуковые эффекты"],
-    },
-    {
-      id: 5,
-      type: "mod",
-      title: "Car Pack Premium",
-      description: "Коллекция премиальных автомобилей для SAMP",
-      price: "259₽",
-      image:
-        "https://images.unsplash.com/photo-1494905998402-395d579af36f?w=400&h=250&fit=crop",
-      features: ["50+ автомобилей", "HD модели", "Реалистичная физика"],
-    },
-    {
-      id: 6,
-      type: "launcher",
-      title: "SAMP Mobile Launcher",
-      description: "Лаунчер для мобильных устройств с полной совместимостью",
-      price: "399₽",
-      image:
-        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop",
-      features: [
-        "Мобильная версия",
-        "Сенсорное управление",
-        "Облачные сохранения",
-      ],
-    },
-  ];
+  const products = [];
 
   return (
     <section id="products" className="py-20 bg-gray-900">
