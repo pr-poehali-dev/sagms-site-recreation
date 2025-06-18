@@ -2,7 +2,18 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const AdminProducts = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([
+    {
+      id: 1,
+      title: "Мод Arizona Games",
+      price: "50₽",
+      type: "mod",
+      status: "active",
+      image:
+        "https://cdn.poehali.dev/files/4e00a9e9-8c49-4702-921f-fdf311e4fc54.png",
+      buyLink: "https://t.me/arznice",
+    },
+  ]);
 
   const [showAddForm, setShowAddForm] = useState(false);
   const [editingProduct, setEditingProduct] = useState(null);

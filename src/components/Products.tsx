@@ -1,7 +1,24 @@
 import Icon from "@/components/ui/icon";
 
 const Products = () => {
-  const products = [];
+  const products = [
+    {
+      id: 1,
+      title: "Мод Arizona Games",
+      description:
+        "Игровой мод для улучшенного опыта в SAMP с дополнительными возможностями",
+      price: "50₽",
+      image:
+        "https://cdn.poehali.dev/files/4e00a9e9-8c49-4702-921f-fdf311e4fc54.png",
+      type: "mod",
+      features: [
+        "Улучшенная графика",
+        "Дополнительные функции",
+        "Стабильная работа",
+      ],
+      buyLink: "https://t.me/arznice",
+    },
+  ];
 
   return (
     <section id="products" className="py-20 bg-gray-900">
@@ -75,7 +92,10 @@ const Products = () => {
                   <span className="text-2xl font-bold text-purple-400">
                     {product.price}
                   </span>
-                  <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2">
+                  <button
+                    onClick={() => window.open(product.buyLink, "_blank")}
+                    className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2"
+                  >
                     <Icon name="ShoppingCart" size={16} />
                     <span>Купить</span>
                   </button>
