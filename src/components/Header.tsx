@@ -19,7 +19,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a
-              href="#"
+              href="/"
               className="text-gray-300 hover:text-purple-400 transition-colors"
             >
               Главная
@@ -29,6 +29,13 @@ const Header = () => {
               className="text-gray-300 hover:text-purple-400 transition-colors"
             >
               Товары
+            </a>
+            <a
+              href="/admin"
+              className="text-gray-300 hover:text-purple-400 transition-colors flex items-center space-x-1"
+            >
+              <Icon name="Settings" size={16} />
+              <span>Управление</span>
             </a>
             <a
               href="https://vk.com"
@@ -62,7 +69,7 @@ const Header = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-800 rounded-lg mt-2">
               <a
-                href="#"
+                href="/"
                 className="block px-3 py-2 text-gray-300 hover:text-purple-400"
               >
                 Главная
@@ -72,6 +79,12 @@ const Header = () => {
                 className="block px-3 py-2 text-gray-300 hover:text-purple-400"
               >
                 Товары
+              </a>
+              <a
+                href="/admin"
+                className="block px-3 py-2 text-gray-300 hover:text-purple-400"
+              >
+                Управление
               </a>
               <a
                 href="https://vk.com"
