@@ -1,6 +1,13 @@
 import Icon from "@/components/ui/icon";
 
 const Hero = () => {
+  const scrollToProducts = () => {
+    const productsSection = document.getElementById("products");
+    if (productsSection) {
+      productsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 overflow-hidden">
       {/* Background Pattern */}
@@ -51,7 +58,10 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-          <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover-scale flex items-center justify-center space-x-2">
+          <button
+            onClick={scrollToProducts}
+            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 hover-scale flex items-center justify-center space-x-2"
+          >
             <Icon name="ShoppingCart" size={20} />
             <span>Смотреть товары</span>
           </button>
@@ -59,6 +69,28 @@ const Hero = () => {
             <Icon name="Play" size={20} />
             <span>Демо версия</span>
           </button>
+        </div>
+
+        {/* Социальные ссылки */}
+        <div className="flex justify-center space-x-6 mt-8 animate-fade-in">
+          <a
+            href="https://t.me/arznice"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            <Icon name="Send" size={24} />
+            <span>Telegram</span>
+          </a>
+          <a
+            href="https://vk.com/arznice"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            <Icon name="Users" size={24} />
+            <span>VK</span>
+          </a>
         </div>
       </div>
     </section>
