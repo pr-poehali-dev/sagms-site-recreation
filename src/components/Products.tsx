@@ -18,6 +18,22 @@ const Products = () => {
       ],
       buyLink: "https://t.me/arznice",
     },
+    {
+      id: 2,
+      title: "Лаунчер Arizona Mobile",
+      description:
+        "Мобильный лаунчер для игры Arizona RP с удобным интерфейсом и быстрым подключением",
+      price: "50₽",
+      image:
+        "https://cdn.poehali.dev/files/63b611e4-34d9-4c3a-bfd7-61bc8f7cc4e1.png",
+      type: "launcher",
+      features: [
+        "Мобильная версия",
+        "Быстрое подключение",
+        "Стабильная работа",
+      ],
+      buyLink: "https://t.me/arznice",
+    },
   ];
 
   return (
