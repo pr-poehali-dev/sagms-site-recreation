@@ -4,67 +4,51 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      type: "launcher",
-      title: "SAMP Launcher Pro",
-      description: "Продвинутый лаунчер с автообновлением модов и серверов",
-      price: "299₽",
+      title: "Мод Arizona Games",
+      description:
+        "Игровой мод для улучшенного опыта в SAMP с дополнительными возможностями",
+      price: "50₽",
       image:
-        "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=250&fit=crop",
-      features: ["Автообновление", "Менеджер модов", "Список серверов"],
+        "https://cdn.poehali.dev/files/4e00a9e9-8c49-4702-921f-fdf311e4fc54.png",
+      type: "mod",
+      features: [
+        "Улучшенная графика",
+        "Дополнительные функции",
+        "Стабильная работа",
+      ],
+      buyLink: "https://t.me/arznice",
     },
     {
       id: 2,
-      type: "mod",
-      title: "GTA SAMP Graphics Mod",
-      description: "Улучшенная графика и визуальные эффекты для SAMP",
-      price: "199₽",
+      title: "Лаунчер Arizona Mobile",
+      description:
+        "Мобильный лаунчер для игры Arizona RP с удобным интерфейсом и быстрым подключением",
+      price: "50₽",
       image:
-        "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=250&fit=crop",
-      features: ["HD текстуры", "Улучшенное освещение", "Оптимизация FPS"],
+        "https://cdn.poehali.dev/files/63b611e4-34d9-4c3a-bfd7-61bc8f7cc4e1.png",
+      type: "launcher",
+      features: [
+        "Мобильная версия",
+        "Быстрое подключение",
+        "Стабильная работа",
+      ],
+      buyLink: "https://t.me/arznice",
     },
     {
       id: 3,
+      title: "Лаунчер Arizona PC",
+      description:
+        "Профессиональный лаунчер для ПК с расширенным функционалом и стабильной работой на Arizona RP",
+      price: "50₽",
+      image:
+        "https://cdn.poehali.dev/files/84ece5f2-1cff-4ce1-bbf7-f97b2f5f378d.png",
       type: "launcher",
-      title: "Ultimate SAMP Client",
-      description: "Полнофункциональный клиент с интегрированными модами",
-      price: "499₽",
-      image:
-        "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=250&fit=crop",
-      features: ["Встроенные моды", "Защита от читов", "Статистика игры"],
-    },
-    {
-      id: 4,
-      type: "mod",
-      title: "SAMP Audio Pack",
-      description: "Расширенный пакет звуков и музыки для SAMP",
-      price: "149₽",
-      image:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=250&fit=crop",
-      features: ["HD звуки", "Новая музыка", "Звуковые эффекты"],
-    },
-    {
-      id: 5,
-      type: "mod",
-      title: "Car Pack Premium",
-      description: "Коллекция премиальных автомобилей для SAMP",
-      price: "259₽",
-      image:
-        "https://images.unsplash.com/photo-1494905998402-395d579af36f?w=400&h=250&fit=crop",
-      features: ["50+ автомобилей", "HD модели", "Реалистичная физика"],
-    },
-    {
-      id: 6,
-      type: "launcher",
-      title: "SAMP Mobile Launcher",
-      description: "Лаунчер для мобильных устройств с полной совместимостью",
-      price: "399₽",
-      image:
-        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop",
       features: [
-        "Мобильная версия",
-        "Сенсорное управление",
-        "Облачные сохранения",
+        "Полная версия для ПК",
+        "Максимальная производительность",
+        "Профессиональный интерфейс",
       ],
+      buyLink: "https://t.me/arznice",
     },
   ];
 
@@ -140,7 +124,10 @@ const Products = () => {
                   <span className="text-2xl font-bold text-purple-400">
                     {product.price}
                   </span>
-                  <button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2">
+                  <button
+                    onClick={() => window.open(product.buyLink, "_blank")}
+                    className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 flex items-center space-x-2"
+                  >
                     <Icon name="ShoppingCart" size={16} />
                     <span>Купить</span>
                   </button>
